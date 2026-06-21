@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <link rel="icon" type="image/png" href="./favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voluntar.md — Platformă de Voluntariat în Moldova</title>
+  <meta name="description"
+    content="Alătură-te comunității de voluntari din Moldova! Proiecte de educație, mediu, sănătate și ajutor social pe platforma Voluntar.md." />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🤝 Voluntar<span>.md</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Meniu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Cum ajuți</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn-primary-custom" href="contact.html">Devino Voluntar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7">
+          <p class="text-white-50 fw-bold mb-2 text-uppercase letter-spacing-2">🌟 Platformă de voluntariat</p>
+          <h1 class="mb-4">Schimbă lumea <br><span style="color:#FFE082">împreună cu noi!</span></h1>
+          <p class="mb-4">Alătură-te comunității de voluntari din Moldova. Ajutăm la educație, mediu, sănătate și
+            bunăstare socială. Fiecare oră contează!</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-primary-custom" style="background:#fff;color:var(--primary);">
+              <i class="fas fa-heart me-2"></i>Devino Voluntar
+            </a>
+            <a href="projects.html" class="btn-outline-custom" style="border-color:#fff;color:#fff;">
+              <i class="fas fa-project-diagram me-2"></i>Vezi Proiecte
+            </a>
+          </div>
+          <div class="mt-4 d-flex gap-4">
+            <div class="text-white">
+              <strong style="font-size:1.5rem;">500+</strong><br><small>Voluntari activi</small>
+            </div>
+            <div class="text-white">
+              <strong style="font-size:1.5rem;">30+</strong><br><small>Proiecte active</small>
+            </div>
+            <div class="text-white">
+              <strong style="font-size:1.5rem;">8</strong><br><small>Raioane acoperite</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLOANA NOUĂ CU IMAGINE -->
+        <div class="col-lg-5 d-none d-lg-block text-center">
+          <img src="./img/hero/Prima imagine index.jpg" alt="Voluntari Moldova" class="hero-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROIECTE ACTIVE -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Proiecte Active</h2>
+        <p class="section-subtitle">Descoperă oportunitățile de voluntariat disponibile</p>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card h-100">
+            <img src="./img/projects/1 meditation.jpg" alt="Meditații pentru copii" class="card-img-top"
+              style="width:100%;height:180px;object-fit:cover;">
+            <div class="p-3">
+              <span class="card-badge badge-educatie mb-2">Educație</span>
+              <h5 class="fw-bold">Meditații pentru copii</h5>
+              <p class="text-muted small">Oferim suport educațional copiilor din familii vulnerabile.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span><i class="fas fa-map-marker-alt text-warning me-1"></i>Chișinău</span>
+                <span><i class="fas fa-users text-success me-1"></i>24 voluntari</span>
+              </div>
+              <a href="projects.html" class="btn-primary-custom d-block text-center mt-3" style="padding:8px;">Află mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card h-100">
+            <img src="./img/projects/2 plantation.jpg" alt="Plantăm Moldova Verde" class="card-img-top"
+              style="width:100%;height:180px;object-fit:cover;">
+            <div class="p-3">
+              <span class="card-badge badge-mediu mb-2">Mediu</span>
+              <h5 class="fw-bold">Plantăm Moldova Verde</h5>
+              <p class="text-muted small">Campanie de împădurire și îngrijire a spațiilor verzi.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span><i class="fas fa-map-marker-alt text-warning me-1"></i>Național</span>
+                <span><i class="fas fa-users text-success me-1"></i>67 voluntari</span>
+              </div>
+              <a href="projects.html" class="btn-primary-custom d-block text-center mt-3" style="padding:8px;">Află mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card h-100">
+            <img src="./img/projects/3 blood.jpg" alt="Donare de sânge" class="card-img-top"
+              style="width:100%;height:180px;object-fit:cover;">
+            <div class="p-3">
+              <span class="card-badge badge-sanatate mb-2">Sănătate</span>
+              <h5 class="fw-bold">Donare de sânge</h5>
+              <p class="text-muted small">Organizăm campanii regulate de donare de sânge în toată țara.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span><i class="fas fa-map-marker-alt text-warning me-1"></i>Bălți</span>
+                <span><i class="fas fa-users text-success me-1"></i>38 voluntari</span>
+              </div>
+              <a href="projects.html" class="btn-primary-custom d-block text-center mt-3" style="padding:8px;">Află mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card h-100">
+            <img src="./img/projects/4 masa calda.png" alt="Mese pentru bătrâni" class="card-img-top"
+              style="width:100%;height:180px;object-fit:cover;">
+            <div class="p-3">
+              <span class="card-badge badge-social mb-2">Social</span>
+              <h5 class="fw-bold">Mese pentru bătrâni</h5>
+              <p class="text-muted small">Ajutăm vârstnicii singuri cu mese calde și companie.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span><i class="fas fa-map-marker-alt text-warning me-1"></i>Cahul</span>
+                <span><i class="fas fa-users text-success me-1"></i>15 voluntari</span>
+              </div>
+              <a href="projects.html" class="btn-primary-custom d-block text-center mt-3" style="padding:8px;">Află mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-4">
+        <a href="projects.html" class="btn-outline-custom">
+          <i class="fas fa-th-large me-2"></i>Vezi toate proiectele
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT COUNTER -->
+  <section class="counter-section text-center">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3 counter-item">
+          <h2 data-count="547">0</h2>
+          <p><i class="fas fa-users me-2"></i>Voluntari</p>
+        </div>
+        <div class="col-6 col-md-3 counter-item">
+          <h2 data-count="12480">0</h2>
+          <p><i class="fas fa-clock me-2"></i>Ore donate</p>
+        </div>
+        <div class="col-6 col-md-3 counter-item">
+          <h2 data-count="34">0</h2>
+          <p><i class="fas fa-project-diagram me-2"></i>Proiecte</p>
+        </div>
+        <div class="col-6 col-md-3 counter-item">
+          <h2 data-count="3200">0</h2>
+          <p><i class="fas fa-heart me-2"></i>Beneficiari</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALE -->
+  <section class="testimonial-slider">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Ce spun voluntarii noștri</h2>
+        <p class="section-subtitle">Povești reale de la oameni ca tine</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="testimonial-card">
+            <div class="testimonial-slide">
+              <div class="avatar">
+                <img src="https://i.pravatar.cc/150?img=47" alt="Maria Popescu">
+              </div>
+              <div class="stars mb-2">⭐⭐⭐⭐⭐</div>
+              <p class="fst-italic">"Voluntariatul m-a transformat. Am cunoscut oameni minunați și am simțit că fac ceva
+                cu adevărat important pentru comunitatea mea."</p>
+              <strong>Maria Popescu</strong>
+              <small class="text-muted d-block">Voluntar în proiectul Educație, 2 ani</small>
+            </div>
+            <div class="testimonial-slide">
+              <div class="avatar">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Alexandru Rusu">
+              </div>
+              <div class="stars mb-2">⭐⭐⭐⭐⭐</div>
+              <p class="fst-italic">"Prin Voluntar.md am plantat 50 de copaci! E o satisfacție imensă să știi că
+                contribui la un viitor mai verde pentru Moldova."</p>
+              <strong>Alexandru Rusu</strong>
+              <small class="text-muted d-block">Voluntar în proiectul Mediu, 1 an</small>
+            </div>
+            <div class="testimonial-slide">
+              <div class="avatar">
+                <img src="https://i.pravatar.cc/150?img=33" alt="Ioana Dănilă">
+              </div>
+              <div class="stars mb-2">⭐⭐⭐⭐⭐</div>
+              <p class="fst-italic">"Am ajutat bătrânii din cartier cu cumpărăturile. Zâmbetul lor e răsplata cea mai
+                frumoasă. Recomand tuturor să încerce!"</p>
+              <strong>Ioana Dănilă</strong>
+              <small class="text-muted d-block">Voluntar în proiectul Social, 6 luni</small>
+            </div>
+          </div>
+          <div class="text-center mt-4 d-flex justify-content-center gap-3">
+            <button id="testimonial-prev" class="btn-outline-custom" style="padding:8px 20px; min-height:44px;">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="testimonial-next" class="btn-primary-custom" style="padding:8px 20px;">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTENERI -->
+  <section class="section-padding bg-light-custom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Partenerii Noștri</h2>
+        <p class="section-subtitle">Organizații care susțin voluntariatul în Moldova</p>
+      </div>
+      <div class="row g-4 justify-content-center align-items-center">
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo">
+            <img src="./img/partners/ong moldova.jpg" alt="ONG Moldova">
+            <span>ONG Moldova</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo">
+            <img src="./img/partners/Eu grants.png" alt="EU Grants">
+            <span>EU Grants</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo">
+            <img src="./img/partners/guvern.jpg" alt="MinEdu">
+            <span>MinEdu</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo">
+            <img src="./img/partners/ecofund.jpg" alt="EcoFund">
+            <span>EcoFund</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="partner-logo">
+            <img src="./img/partners/undp.jpg" alt="UNDP MD">
+            <span>UNDP MD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-padding text-center"
+    style="background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;">
+    <div class="container">
+      <h2 class="text-white mb-3">Gata să faci diferența?</h2>
+      <p class="text-white-75 mb-4 fs-5">Înregistrează-te acum și alătură-te celor 500+ voluntari din Moldova!</p>
+      <a href="contact.html" class="btn-primary-custom"
+        style="background:#fff;color:var(--primary);font-size:1.1rem;padding:15px 40px;">
+        <i class="fas fa-rocket me-2"></i>Înregistrează-te Gratuit
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-3">🤝 Voluntar<span>.md</span></div>
+          <p class="text-muted">Platforma națională de voluntariat din Moldova. Conectăm oameni cu inimă mare cu
+            proiecte care schimbă lumea.</p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Pagini</h5>
+          <a href="index.html">Acasă</a>
+          <a href="projects.html">Proiecte</a>
+          <a href="help.html">Cum ajuți</a>
+          <a href="gallery.html">Galerie</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Proiecte</h5>
+          <a href="projects.html">Educație</a>
+          <a href="projects.html">Mediu</a>
+          <a href="projects.html">Social</a>
+          <a href="projects.html">Sănătate</a>
+          <a href="projects.html">Cultură</a>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact</h5>
+          <p class="text-muted"><i class="fas fa-map-marker-alt text-warning me-2"></i>Str. Voluntarilor 1, Chișinău</p>
+          <p class="text-muted"><i class="fas fa-phone text-warning me-2"></i>+373 22 000 000</p>
+          <p class="text-muted"><i class="fas fa-envelope text-warning me-2"></i>info@voluntar.md</p>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="text-muted text-center mb-0">© 2026 Voluntar.md — Toate drepturile rezervate | Creat cu ❤️ pentru
+        Moldova</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" aria-label="Înapoi sus"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
