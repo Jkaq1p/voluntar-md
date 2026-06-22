@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <link rel="icon" type="image/png" href="./favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proiecte Active — Voluntar.md</title>
+  <meta name="description"
+    content="Explorează proiectele de voluntariat active din Moldova: educație, mediu, sănătate, social și cultură. Alătură-te echipei Voluntar.md!" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo.png" alt="Voluntar.md" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Meniu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Cum ajuți</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn-primary-custom" href="contact.html">Devino Voluntar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fas fa-project-diagram me-3"></i>Proiecte Active</h1>
+      <p>Descoperă toate oportunitățile de voluntariat din Moldova</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white">Acasă</a></li>
+          <li class="breadcrumb-item active text-white-50">Proiecte</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- FILTRARE -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Filtrează Proiectele</h2>
+        <p class="section-subtitle">
+          <span id="projects-count">8 proiecte</span> disponibile
+        </p>
+        <div class="mb-2">
+          <strong class="text-muted me-2">Domeniu:</strong>
+          <button class="filter-btn active" data-filter="all">Toate</button>
+          <button class="filter-btn" data-filter="educatie">📚 Educație</button>
+          <button class="filter-btn" data-filter="mediu">🌳 Mediu</button>
+          <button class="filter-btn" data-filter="social">🤲 Social</button>
+          <button class="filter-btn" data-filter="sanatate">❤️ Sănătate</button>
+          <button class="filter-btn" data-filter="cultura">🎭 Cultură</button>
+        </div>
+        <div>
+          <strong class="text-muted me-2">Locație:</strong>
+          <button class="filter-btn filter-btn-green" data-filter="chisinau">Chișinău</button>
+          <button class="filter-btn filter-btn-green" data-filter="balti">Bălți</button>
+          <button class="filter-btn filter-btn-green" data-filter="cahul">Cahul</button>
+          <button class="filter-btn filter-btn-green" data-filter="national">Național</button>
+        </div>
+      </div>
+
+      <!-- GRID PROIECTE -->
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="educatie" data-locatie="chisinau">
+          <div class="project-card h-100">
+            <img src="./img/projects/1 meditation.jpg" alt="Meditații Gratuite" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-educatie">Educație</span>
+                <span class="badge bg-success text-white">Activ</span>
+              </div>
+              <h5 class="fw-bold">Meditații Gratuite</h5>
+              <p class="text-muted small">Suport educațional pentru copiii din familii vulnerabile din Chișinău.
+                Matematică, română și engleză.</p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Chișinău &nbsp;
+                <i class="fas fa-users text-success me-1"></i>24 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Săptămânal
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="mediu" data-locatie="national">
+          <div class="project-card h-100">
+            <img src="./img/projects/2 plantation.jpg" alt="Plantăm Moldova Verde" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-mediu">Mediu</span>
+                <span class="badge bg-success text-white">Activ</span>
+              </div>
+              <h5 class="fw-bold">Plantăm Moldova Verde</h5>
+              <p class="text-muted small">Campanie națională de împădurire. Plantăm copaci în toate raioanele Moldovei.
+              </p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Național &nbsp;
+                <i class="fas fa-users text-success me-1"></i>67 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Lunar
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="sanatate" data-locatie="balti">
+          <div class="project-card h-100">
+            <img src="./img/projects/3 blood.jpg" alt="Donare de Sânge" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-sanatate">Sănătate</span>
+                <span class="badge bg-warning text-dark">În desfășurare</span>
+              </div>
+              <h5 class="fw-bold">Donare de Sânge</h5>
+              <p class="text-muted small">Aceasta este o campanie de donare de sânge organizată în parteneriat cu
+                spitalele din Bălți.
+              </p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Bălți &nbsp;
+                <i class="fas fa-users text-success me-1"></i>38 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Trimestrial
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="social" data-locatie="cahul">
+          <div class="project-card h-100">
+            <img src="./img/projects/4 masa calda.png" alt="Mese pentru Bătrâni" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-social">Social</span>
+                <span class="badge bg-success text-white">Activ</span>
+              </div>
+              <h5 class="fw-bold">Mese pentru Bătrâni</h5>
+              <p class="text-muted small">Ajutăm vârstnicii singuri cu mese calde zilnice și companie plăcută, susținere
+                constantă.</p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Cahul &nbsp;
+                <i class="fas fa-users text-success me-1"></i>15 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Zilnic
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="cultura" data-locatie="chisinau">
+          <div class="project-card h-100">
+            <img src="./img/projects/5 teatru.jpg" alt="Teatru pentru Toți" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-cultura">Cultură</span>
+                <span class="badge bg-success text-white">Activ</span>
+              </div>
+              <h5 class="fw-bold">Teatru pentru Toți</h5>
+              <p class="text-muted small">Organizăm spectacole de teatru gratuite pentru copiii din case de copii.</p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Chișinău &nbsp;
+                <i class="fas fa-users text-success me-1"></i>12 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Lunar
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="mediu" data-locatie="national">
+          <div class="project-card h-100">
+            <img src="./img/projects/6 garbage.jpg" alt="Colectare Selectivă" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-mediu">Mediu</span>
+                <span class="badge bg-success text-white">Activ</span>
+              </div>
+              <h5 class="fw-bold">Colectare Selectivă</h5>
+              <p class="text-muted small">Campanie de educație ecologică și colectare selectivă în școli și cartiere.
+              </p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Național &nbsp;
+                <i class="fas fa-users text-success me-1"></i>45 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Săptămânal
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="educatie" data-locatie="balti">
+          <div class="project-card h-100">
+            <img src="./img/projects/7 coding.jpg" alt="Coding pentru Copii" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-educatie">Educație</span>
+                <span class="badge bg-success text-white">Activ</span>
+              </div>
+              <h5 class="fw-bold">Coding pentru Copii</h5>
+              <p class="text-muted small">Cursuri gratuite de programare pentru copiii cu vârste între 10-16 ani.</p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Bălți &nbsp;
+                <i class="fas fa-users text-success me-1"></i>8 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Bisăptămânal
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 project-item" data-domeniu="social" data-locatie="chisinau">
+          <div class="project-card h-100">
+            <img src="./img/projects/8 animals.jpg" alt="Adăpost pentru Animale" class="project-card-img">
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="card-badge badge-social">Social</span>
+                <span class="badge bg-info text-white">Nou</span>
+              </div>
+              <h5 class="fw-bold">Adăpost pentru Animale</h5>
+              <p class="text-muted small">Îngrijim și găsim familii adoptive pentru animalele abandonate din Chișinău.
+              </p>
+              <hr class="my-2" />
+              <div class="small text-muted mb-2">
+                <i class="fas fa-map-marker-alt text-warning me-1"></i>Chișinău &nbsp;
+                <i class="fas fa-users text-success me-1"></i>20 voluntari &nbsp;
+                <i class="fas fa-calendar text-primary me-1"></i>Zilnic
+              </div>
+              <a href="contact.html" class="btn-primary-custom d-block text-center" style="padding:8px;">Participă</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </section><!-- end filtrare -->
+
+  <!-- TIMELINE -->
+  <section class="section-padding bg-light-custom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Activități Recente</h2>
+        <p class="section-subtitle">Ce am realizat împreună în 2026</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+          <div class="activity-card activity-c1">
+            <div class="activity-marker">
+              <span class="activity-num">1</span>
+              <span class="activity-month">IAN</span>
+            </div>
+            <div class="activity-body">
+              <h5 class="fw-bold">Lansarea campaniei „Plantăm Moldova Verde"</h5>
+              <p class="text-muted mb-0">Am plantat primii 500 de copaci în Parcul Central din Chișinău, cu participarea a 80 de voluntari.</p>
+            </div>
+          </div>
+
+          <div class="activity-card activity-c2">
+            <div class="activity-marker">
+              <span class="activity-num">2</span>
+              <span class="activity-month">FEB</span>
+            </div>
+            <div class="activity-body">
+              <h5 class="fw-bold">Deschiderea centrului de meditații din Bălți</h5>
+              <p class="text-muted mb-0">Centrul nostru de educație a deschis porțile, ajutând 120 de copii în primele două luni.</p>
+            </div>
+          </div>
+
+          <div class="activity-card activity-c3">
+            <div class="activity-marker">
+              <span class="activity-num">3</span>
+              <span class="activity-month">MAR</span>
+            </div>
+            <div class="activity-body">
+              <h5 class="fw-bold">Campanie de donare de sânge — 200 donatori</h5>
+              <p class="text-muted mb-0">Cea mai de succes campanie de până acum. Am colectat sânge pentru 3 spitale din Moldova.</p>
+            </div>
+          </div>
+
+          <div class="activity-card activity-c4">
+            <div class="activity-marker">
+              <span class="activity-num">4</span>
+              <span class="activity-month">APR</span>
+            </div>
+            <div class="activity-body">
+              <h5 class="fw-bold">Spectacol de teatru pentru 300 de copii</h5>
+              <p class="text-muted mb-0">Proiectul „Teatru pentru Toți" a organizat un spectacol special pentru copiii din casele de copii.</p>
+            </div>
+          </div>
+
+          <div class="activity-card activity-c5">
+            <div class="activity-marker">
+              <span class="activity-num">5</span>
+              <span class="activity-month">MAI</span>
+            </div>
+            <div class="activity-body">
+              <h5 class="fw-bold">Atingem 500 de voluntari înregistrați!</h5>
+              <p class="text-muted mb-0">Un moment de sărbătoare! Comunitatea noastră a crescut la 500 de voluntari activi din toată Moldova.</p>
+            </div>
+          </div>
+
+          <div class="activity-card activity-c6">
+            <div class="activity-marker">
+              <span class="activity-num">6</span>
+              <span class="activity-month">IUN</span>
+            </div>
+            <div class="activity-body">
+              <h5 class="fw-bold">Lansarea programului de coding pentru copii</h5>
+              <p class="text-muted mb-0">Noul program de programare a debutat cu succes în Bălți, cu 30 de participanți.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-3">🤝 Voluntar<span>.md</span></div>
+          <p class="text-muted">Platforma națională de voluntariat din Moldova.</p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Pagini</h5>
+          <a href="index.html">Acasă</a>
+          <a href="projects.html">Proiecte</a>
+          <a href="help.html">Cum ajuți</a>
+          <a href="gallery.html">Galerie</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Domenii</h5>
+          <a href="projects.html">Educație</a>
+          <a href="projects.html">Mediu</a>
+          <a href="projects.html">Social</a>
+          <a href="projects.html">Sănătate</a>
+          <a href="projects.html">Cultură</a>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact</h5>
+          <p class="text-muted"><i class="fas fa-map-marker-alt text-warning me-2"></i>Str. Voluntarilor 1, Chișinău</p>
+          <p class="text-muted"><i class="fas fa-phone text-warning me-2"></i>+373 22 000 000</p>
+          <p class="text-muted"><i class="fas fa-envelope text-warning me-2"></i>info@voluntar.md</p>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="text-muted text-center mb-0">© 2026 Voluntar.md — Toate drepturile rezervate</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Înapoi sus"><i class="fas fa-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</body>
+</html>
