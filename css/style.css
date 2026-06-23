@@ -1,6 +1,5 @@
-/* ===== VOLUNTAR.MD - Stiluri Personalizate ===== */
 
-/* Variabile CSS */
+/* Variabile CSS care is obligatorii din sarcina mea  */
 :root {
   --primary: #F57C00;
   --primary-dark: #E65100;
@@ -12,7 +11,6 @@
   --light-gray: #F5F5F5;
 }
 
-/* Reset & Base */
 * {
   box-sizing: border-box;
 }
@@ -48,7 +46,7 @@ img {
   height: auto;
 }
 
-/* ===== NAVBAR ===== */
+/* aici e NAVBAR */
 .navbar {
   background: #fff !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -85,7 +83,7 @@ img {
   border-bottom: 2px solid var(--primary);
 }
 
-/* ===== BUTOANE ===== */
+/* BUTOANE aici sunt */
 .btn-primary-custom {
   background: var(--primary);
   color: #fff;
@@ -144,7 +142,7 @@ img {
   color: #fff;
 }
 
-/* ===== SECTION TITLES ===== */
+/* tilturile sectiunilor */
 .section-title {
   position: relative;
   display: inline-block;
@@ -168,7 +166,7 @@ img {
   margin-bottom: 2rem;
 }
 
-/* ===== HERO ===== */
+/*aici am facut HERO*/
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, #FF8F00 50%, var(--accent) 100%);
   min-height: 100vh;
@@ -220,7 +218,7 @@ img {
   color: #fff;
 }
 
-/* ===== CARDS ===== */
+/* cardurile mele */
 .blog-card-img {
   width: 100%;
   height: 180px;
@@ -292,7 +290,7 @@ img {
   margin-top: auto;
 }
 
-/* ===== COUNTER ===== */
+/* COUNTER animat din sarcina */
 .counter-section {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   padding: 60px 0;
@@ -312,7 +310,7 @@ img {
   letter-spacing: 1px;
 }
 
-/* ===== TESTIMONIALE ===== */
+/* Testimoniale aici sunt */
 .testimonial-slider {
   background: var(--light);
   padding: 60px 0;
@@ -351,7 +349,7 @@ img {
   font-size: 1.2rem;
 }
 
-/* ===== Avatar Povesti De Succes - help.html ===== */
+/* ===== Acesta e Avatar Povesti De Succes de la help.html ===== */
 .success-avatar {
   width: 90px;
   height: 90px;
@@ -368,7 +366,7 @@ img {
   object-fit: cover;
 }
 
-/* ===== PARTENERI ===== */
+/*Asta is PARTENERII*/
 .partner-logo {
   background: #fff;
   border-radius: 12px;
@@ -399,7 +397,7 @@ img {
   transform: scale(1.05);
 }
 
-/* ===== FILTRARE ===== */
+/* FILTRARE */
 .filter-btn {
   padding: 8px 20px;
   border: 2px solid var(--primary);
@@ -430,7 +428,14 @@ img {
   color: #fff;
 }
 
-/* ===== GALERIE ===== */
+/* GALERIA asta e */
+.project-card-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  display: block;
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -486,7 +491,7 @@ img {
   opacity: 1;
 }
 
-/* ===== LIGHTBOX ===== */
+/* LIGHTBOX aici e*/
 .lightbox {
   display: none;
   position: fixed;
@@ -566,7 +571,7 @@ img {
   font-size: 1.1rem;
 }
 
-/* ===== TIMELINE ===== */
+/* TIMELINE de la proiecte */
 .activity-card {
   display: flex;
   align-items: stretch;
@@ -629,7 +634,7 @@ img {
   color: var(--dark);
 }
 
-/* Culori per card */
+/* Culori pentru cardruile timeline */
 .activity-c1 .activity-marker { background: #FFF3E0; }
 .activity-c1 .activity-num { background: var(--primary); }
 .activity-c1 .activity-month { color: var(--primary-dark); }
@@ -668,7 +673,7 @@ img {
   }
 }
 
-/* ===== FAQ / ACCORDION ===== */
+/* Aici e FAQ */
 .accordion-button:not(.collapsed) {
   background: var(--light);
   color: var(--primary);
@@ -723,7 +728,7 @@ img {
   flex-shrink: 0;
 }
 
-/* ===== BLOG ===== */
+/* BLOG aici e */
 .blog-card {
   border: none;
   border-radius: 16px;
@@ -745,7 +750,7 @@ img {
   color: var(--primary);
 }
 
-/* ===== HOW IT WORKS ===== */
+/* Cum functioneaza secventa */
 .step-card {
   text-align: center;
   padding: 30px 20px;
@@ -771,7 +776,7 @@ img {
   margin-bottom: 15px;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER-ul */
 footer {
   background: #1A1A1A;
   color: #ccc;
@@ -865,7 +870,7 @@ footer p.text-muted.text-center {
   color: #545454 !important;
 }
 
-/* ===== BACK TO TOP ===== */
+/* Aici e BACK TO TOP */
 #backToTop {
   position: fixed;
   bottom: 30px;
@@ -895,7 +900,7 @@ footer p.text-muted.text-center {
   transform: translateY(-3px);
 }
 
-/* ===== VOLUNTEER OF MONTH ===== */
+/* VOLUNTARUL LUNII*/
 .volunteer-month {
   background: linear-gradient(135deg, #F5F1EA, #EBE5DA);
   border-radius: 24px;
@@ -1002,7 +1007,7 @@ footer p.text-muted.text-center {
   }
 }
 
-/* ===== PAGE HERO (non-main pages) ===== */
+/* Aici am facut eu PAGE HERO */
 .page-hero {
   background: linear-gradient(135deg, var(--primary), #FF8F00);
   padding: 120px 0 60px;
@@ -1019,7 +1024,7 @@ footer p.text-muted.text-center {
   font-size: 1.1rem;
 }
 
-/* ===== NOTIFICARE FORMULAR ===== */
+/* Aici e notificarea dupa inregistarea la formular*/
 #formAlert {
   display: none;
   border-radius: 12px;
@@ -1027,7 +1032,7 @@ footer p.text-muted.text-center {
   font-weight: 600;
 }
 
-/* ===== MAP PLACEHOLDER ===== */
+/* Aici am pus mapa la Cahul */
 .map-placeholder {
   height: 300px;
   background: linear-gradient(135deg, #E8F5E9, #F3E5F5);
@@ -1047,7 +1052,7 @@ footer p.text-muted.text-center {
   margin: 0;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Si de asmenea responsivitatea aici am facut */
 @media (max-width: 767px) {
   .hero h1 {
     font-size: 2rem;
@@ -1086,7 +1091,7 @@ footer p.text-muted.text-center {
   }
 }
 
-/* ===== SECTION SPACING ===== */
+/* Distantele intre sectiuni */
 .section-padding {
   padding: 80px 0;
 }
@@ -1099,12 +1104,12 @@ footer p.text-muted.text-center {
   background: var(--light);
 }
 
-/* ===== SMOOTH SCROLL ===== */
+/* Un scroll smooth */
 html {
   scroll-behavior: smooth;
 }
 
-/* ===== FORM SUCCESS ===== */
+/* aici e forma de succes */
 .invalid-feedback {
   font-size: 0.85rem;
 }
