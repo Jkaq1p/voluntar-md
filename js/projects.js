@@ -1,6 +1,3 @@
-// ===== PROJECTS.JS - Filtrare Proiecte & Timeline =====
-
-// ===== FILTRARE PROIECTE =====
 var domeniuBtns = document.querySelectorAll('.filter-btn:not(.filter-btn-green)');
 var locatieBtns = document.querySelectorAll('.filter-btn-green');
 var projectItems = document.querySelectorAll('.project-item');
@@ -43,7 +40,6 @@ domeniuBtns.forEach(function (btn) {
 
 locatieBtns.forEach(function (btn) {
   btn.addEventListener('click', function () {
-    // dacă apeși din nou pe locația deja activă, o deselectezi (revii la "toate")
     if (this.classList.contains('active')) {
       this.classList.remove('active');
       activeLocatie = 'all';
@@ -56,5 +52,4 @@ locatieBtns.forEach(function (btn) {
   });
 });
 
-// Rulează filtrarea inițială la încărcare
 applyFilters();

@@ -1,6 +1,4 @@
-// ===== MAIN.JS - Funcționalități Comune =====
-
-// ===== BACK TO TOP =====
+// BACK TO TOP
 const backToTopBtn = document.getElementById('backToTop');
 if (backToTopBtn) {
   window.addEventListener('scroll', function () {
@@ -15,7 +13,7 @@ if (backToTopBtn) {
   });
 }
 
-// ===== SMOOTH SCROLL pentru linkuri interne =====
+// Smooth scroll e
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
     var target = document.querySelector(this.getAttribute('href'));
@@ -26,7 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   });
 });
 
-// ===== NAVBAR: închide meniul pe mobil după click =====
+// Aici o sa se inchida meniul pe mobil după click
 var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 var navbarCollapse = document.querySelector('.navbar-collapse');
 navLinks.forEach(function (link) {
@@ -38,7 +36,7 @@ navLinks.forEach(function (link) {
   });
 });
 
-// ===== COUNTER ANIMAT (pentru index.html) =====
+// Am facut counter animate pentru index.html
 function animateCounter(el, target, duration) {
   var start = 0;
   var startTime = null;
@@ -57,7 +55,7 @@ function animateCounter(el, target, duration) {
   requestAnimationFrame(step);
 }
 
-// Pornire counter când secțiunea devine vizibilă
+// Aici se porneste counter cand sectiunea e vizibila 
 var counterSection = document.querySelector('.counter-section');
 if (counterSection) {
   var countersStarted = false;
@@ -75,7 +73,7 @@ if (counterSection) {
   observer.observe(counterSection);
 }
 
-// ===== TESTIMONIALE SLIDER SIMPLU =====
+// Testimonial slider simplu
 var slides = document.querySelectorAll('.testimonial-slide');
 var currentSlide = 0;
 if (slides.length > 0) {

@@ -1,6 +1,4 @@
-// ===== GALLERY.JS - Galerie cu Lightbox & Filtrare =====
-
-// ===== FILTRARE GALERIE =====
+// Filtrare galerie aici am implementat 
 var galleryFilters = document.querySelectorAll('.gallery-filter');
 var galleryItems = document.querySelectorAll('.gallery-item');
 var galleryCols = document.querySelectorAll('.gallery-col');
@@ -20,7 +18,7 @@ galleryFilters.forEach(function (btn) {
     });
 });
 
-// ===== LIGHTBOX =====
+// LIGHTBOX 
 var lightbox = document.getElementById('lightbox');
 var lightboxContent = document.getElementById('lightboxPlaceholder');
 var lightboxCaption = document.getElementById('lightboxCaption');
@@ -70,7 +68,7 @@ galleryItems.forEach(function (item, index) {
     });
 });
 
-// Butoane lightbox
+// aici is butoanele lightbox
 var closeBtn = document.getElementById('lightboxClose');
 var prevBtn = document.getElementById('lightbox-prev');
 var nextBtn = document.getElementById('lightbox-next');
@@ -79,14 +77,14 @@ if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
 if (prevBtn) prevBtn.addEventListener('click', function () { navigateLightbox(-1); });
 if (nextBtn) nextBtn.addEventListener('click', function () { navigateLightbox(1); });
 
-// Închide la click pe fundal
+// inchide la click pe fundal
 if (lightbox) {
     lightbox.addEventListener('click', function (e) {
         if (e.target === lightbox) closeLightbox();
     });
 }
 
-// Taste săgeată
+// Aici is tastele sageata
 document.addEventListener('keydown', function (e) {
     if (!lightbox || !lightbox.classList.contains('active')) return;
     if (e.key === 'ArrowLeft') navigateLightbox(-1);

@@ -1,5 +1,3 @@
-// ===== VALIDATION.JS - Validare Formular Voluntar =====
-
 var form = document.getElementById('voluntarForm');
 var alertBox = document.getElementById('formAlert');
 
@@ -38,7 +36,7 @@ if (form) {
     }
   });
 
-  // Validare vârstă
+  // Validarea vârstă am facut 
   var varstaInput = document.getElementById('varsta');
   if (varstaInput) {
     varstaInput.addEventListener('input', function () {
@@ -51,7 +49,7 @@ if (form) {
     });
   }
 
-  // Validare telefon (format moldovenesc)
+  // Aici e validare formatului moldovenesc nr telefon
   var telefonInput = document.getElementById('telefon');
   if (telefonInput) {
     telefonInput.addEventListener('input', function () {
