@@ -431,8 +431,8 @@ img {
 /* GALERIA asta e */
 .project-card-img {
   width: 100%;
-  height: 200px; /* Poți ajusta aici dacă le vrei mai înalte sau mai scurte, ex: 250px */
-  object-fit: cover; /* Aceasta este comanda magică ce taie poza proporțional ca să umple spațiul */
+  height: 200px; 
+  object-fit: cover;
   display: block;
 }
 
