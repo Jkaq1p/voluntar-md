@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <link rel="icon" type="image/png" href="./favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie Foto — Voluntar.md</title>
+  <meta name="description"
+    content="Galeria foto a activităților de voluntariat Voluntar.md: educație, mediu, social și sănătate. Vezi cum schimbăm Moldova împreună!" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo.png" alt="Voluntar.md" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Meniu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Cum ajuți</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn-primary-custom" href="contact.html">Devino Voluntar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fas fa-images me-3"></i>Galerie Foto</h1>
+      <p>Momente speciale din activitățile noastre de voluntariat</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white">Acasă</a></li>
+          <li class="breadcrumb-item active text-white-50">Galerie</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- FILTRARE GALERIE -->
+  <section class="section-padding" style="padding-bottom: 80px;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Activitățile Noastre</h2>
+        <p class="section-subtitle">Filtrează după categorie</p>
+        <div>
+          <button class="gallery-filter filter-btn active" data-filter="all">Toate</button>
+          <button class="gallery-filter filter-btn" data-filter="educatie">📚 Educație</button>
+          <button class="gallery-filter filter-btn" data-filter="mediu">🌳 Mediu</button>
+          <button class="gallery-filter filter-btn" data-filter="social">🤲 Social</button>
+          <button class="gallery-filter filter-btn" data-filter="sanatate">❤️ Sănătate</button>
+        </div>
+      </div>
+
+      <!-- GALERIE GRID -->
+      <div class="row g-3">
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="educatie">
+          <div class="gallery-item" data-caption="Meditații gratuite pentru copii — Chișinău 2026">
+            <img src="./img/gallery/1 edu.jpg" alt="Meditații gratuite" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="mediu">
+          <div class="gallery-item" data-caption="Campania Plantăm Moldova Verde — Parcul Central">
+            <img src="./img/gallery/plantarea copaci.jpg" alt="Plantăm Moldova Verde" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="social">
+          <div class="gallery-item" data-caption="Mese calde pentru bătrânii singuri — Cahul">
+            <img src="./img/projects/4 masa calda.png" alt="Mese pentru bătrâni" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="sanatate">
+          <div class="gallery-item" data-caption="Campanie donare sânge — Spitalul Bălți">
+            <img src="./img/gallery/2 medical.jpg" alt="Donare de sânge" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="educatie">
+          <div class="gallery-item" data-caption="Cursuri de programare pentru copii — Bălți">
+            <img src="./img/projects/7 coding.jpg" alt="Coding pentru copii" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="mediu">
+          <div class="gallery-item" data-caption="Colectare selectivă în școli — Campanie națională">
+            <img src="./img/projects/6 garbage.jpg" alt="Colectare selectivă" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="social">
+          <div class="gallery-item" data-caption="Zi de adopție animale — Adăpostul Chișinău">
+            <img src="./img/projects/8 animals.jpg" alt="Adăpost animale" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="educatie">
+          <div class="gallery-item" data-caption="Ateliere creative pentru copii — Casa de Cultură">
+            <img src="./img/gallery/atelier kids.jpg" alt="Ateliere creative" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="mediu">
+          <div class="gallery-item" data-caption="Grădini comunitare — Proiect Urban Verde">
+            <img src="./img/gallery/3 mediu plant.jpg" alt="Grădini comunitare" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="sanatate">
+          <div class="gallery-item" data-caption="Maraton caritabil — 5km pentru sănătate">
+            <img src="./img/gallery/5k running.jpg" alt="Maraton caritabil" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="social">
+          <div class="gallery-item" data-caption="Pachete cadou pentru copiii din case de copii">
+            <img src="./img/gallery/charity orphans.jpg" alt="Pachete cadou" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-col" data-category="educatie">
+          <div class="gallery-item" data-caption="Club de lectură pentru tineri — Biblioteca Națională">
+            <img src="./img/gallery/biblioteca copii.jpg" alt="Club de lectură" class="gallery-img">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </section><!-- end section -->
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Previzualizare imagine">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Închide">✕</button>
+      <button class="lightbox-nav" id="lightbox-prev" aria-label="Anterior">❮</button>
+      <div id="lightboxPlaceholder" class="lightbox-placeholder">🖼️</div>
+      <button class="lightbox-nav" id="lightbox-next" aria-label="Următor">❯</button>
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-3">🤝 Voluntar<span>.md</span></div>
+          <p class="text-muted">Platforma națională de voluntariat din Moldova.</p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Pagini</h5>
+          <a href="index.html">Acasă</a>
+          <a href="projects.html">Proiecte</a>
+          <a href="help.html">Cum ajuți</a>
+          <a href="gallery.html">Galerie</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Categorii</h5>
+          <a href="gallery.html">Educație</a>
+          <a href="gallery.html">Mediu</a>
+          <a href="gallery.html">Social</a>
+          <a href="gallery.html">Sănătate</a>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact</h5>
+          <p class="text-muted"><i class="fas fa-map-marker-alt text-warning me-2"></i>Str. Voluntarilor 1, Chișinău</p>
+          <p class="text-muted"><i class="fas fa-phone text-warning me-2"></i>+373 22 000 000</p>
+          <p class="text-muted"><i class="fas fa-envelope text-warning me-2"></i>info@voluntar.md</p>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="text-muted text-center mb-0">© 2026 Voluntar.md — Toate drepturile rezervate</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Înapoi sus"><i class="fas fa-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <link rel="icon" type="image/png" href="./favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Voluntar.md</title>
+  <meta name="description"
+    content="Citește articolele noastre despre voluntariat, povești de succes, evenimente și impactul comunității Voluntar.md în Moldova." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo.png" alt="Voluntar.md" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Meniu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Cum ajuți</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn-primary-custom" href="contact.html">Devino Voluntar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fas fa-blog me-3"></i>Blogul Nostru</h1>
+      <p>Povești, evenimente și impact din lumea voluntariatului moldovenesc</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white">Acasă</a></li>
+          <li class="breadcrumb-item active text-white-50">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- VOLUNTARUL LUNII -->
+  <section class="section-padding bg-light-custom">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">⭐ Voluntarul Lunii</h2>
+        <p class="section-subtitle">Recunoaștem efortul și dedicarea excepțională</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="volunteer-month">
+            <div class="volunteer-month-photo">
+              <img src="./img/hero/voluntarul lunii.jpg" alt="Maria Popescu">
+            </div>
+            <div class="volunteer-month-content">
+              <span class="volunteer-month-badge"><i class="fas fa-star me-1"></i>Voluntarul Lunii</span>
+              <h3 class="fw-bold">Maria Popescu</h3>
+              <p class="volunteer-month-role">Voluntar în Educație — Chișinău</p>
+              <div class="stars mb-3">⭐⭐⭐⭐⭐</div>
+
+              <div class="volunteer-month-stats">
+                <div>
+                  <strong>2 ani</strong>
+                  <small>Experiență</small>
+                </div>
+                <div>
+                  <strong>240h</strong>
+                  <small>Ore donate</small>
+                </div>
+                <div>
+                  <strong>15</strong>
+                  <small>Copii ajutați</small>
+                </div>
+              </div>
+
+              <p class="volunteer-month-quote">"Fiecare copil care înțelege o lecție nouă este cea mai mare recompensă
+                pentru mine. Voluntariatul mi-a dat un scop și o comunitate extraordinară!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTRARE BLOG -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Articole Recente</h2>
+        <p class="section-subtitle">Alege categoria preferată</p>
+        <div>
+          <button class="filter-btn active" onclick="filterBlog(this,'all')">Toate</button>
+          <button class="filter-btn" onclick="filterBlog(this,'povesti')">💬 Povești</button>
+          <button class="filter-btn" onclick="filterBlog(this,'evenimente')">📅 Evenimente</button>
+          <button class="filter-btn" onclick="filterBlog(this,'impact')">📊 Impact</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="blogGrid">
+
+        <div class="col-md-6 col-lg-4 blog-post-item" data-category="povesti">
+          <div class="blog-card h-100">
+            <img src="./img/blog/1 meditatii maria.jpg" alt="Meditații copii" class="blog-card-img">
+            <div class="p-4">
+              <span class="card-badge badge-educatie mb-2">Povești</span>
+              <h5 class="fw-bold mt-2">Cum am schimbat viața unui copil prin meditații</h5>
+              <p class="blog-meta mb-2">
+                <i class="fas fa-calendar me-1"></i>15 Iunie 2026 &nbsp;
+                <i class="fas fa-user me-1"></i>Maria Popescu
+              </p>
+              <p class="text-muted small">Ion avea 10 ani și nu știa să citească corect. După 6 luni de meditații
+                săptămânale, azi este primul din clasă la română...</p>
+              <a href="#" class="btn-primary-custom mt-2" style="padding:8px 20px;font-size:0.9rem;">Citește mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-post-item" data-category="evenimente">
+          <div class="blog-card h-100">
+            <img src="./img/blog/plant copaci 1.jpg" alt="Plantare copaci" class="blog-card-img">
+            <div class="p-4">
+              <span class="card-badge badge-mediu mb-2">Evenimente</span>
+              <h5 class="fw-bold mt-2">Maraton de plantare: 1000 copaci într-o zi!</h5>
+              <p class="blog-meta mb-2">
+                <i class="fas fa-calendar me-1"></i>10 Mai 2026 &nbsp;
+                <i class="fas fa-user me-1"></i>Echipa Voluntar.md
+              </p>
+              <p class="text-muted small">Pe 5 mai, 150 de voluntari s-au adunat în Parcul Central pentru a planta 1000
+                de copaci în cadrul campaniei „Moldova Verde 2026"...</p>
+              <a href="#" class="btn-primary-custom mt-2" style="padding:8px 20px;font-size:0.9rem;">Citește mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-post-item" data-category="impact">
+          <div class="blog-card h-100">
+            <img src="./img/blog/raport.jpg" alt="Raport voluntariat" class="blog-card-img">
+            <div class="p-4">
+              <span class="card-badge badge-sanatate mb-2">Impact</span>
+              <h5 class="fw-bold mt-2">Raport semestrial: 12.000 ore de voluntariat donate</h5>
+              <p class="blog-meta mb-2">
+                <i class="fas fa-calendar me-1"></i>1 Iulie 2026 &nbsp;
+                <i class="fas fa-user me-1"></i>Echipa Voluntar.md
+              </p>
+              <p class="text-muted small">În prima jumătate a anului 2026, comunitatea noastră a donat peste 12.000 ore
+                de voluntariat, ajutând 3.200 de beneficiari din toată Moldova...</p>
+              <a href="#" class="btn-primary-custom mt-2" style="padding:8px 20px;font-size:0.9rem;">Citește mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-post-item" data-category="povesti">
+          <div class="blog-card h-100">
+            <img src="./img/blog/bunica.jpg" alt="Bunica Vera" class="blog-card-img">
+            <div class="p-4">
+              <span class="card-badge badge-social mb-2">Povești</span>
+              <h5 class="fw-bold mt-2">Bunica Vera: „Aveți grijă de voi, copii dragi"</h5>
+              <p class="blog-meta mb-2">
+                <i class="fas fa-calendar me-1"></i>20 Mai 2026 &nbsp;
+                <i class="fas fa-user me-1"></i>Ioana Dănilă
+              </p>
+              <p class="text-muted small">La 84 de ani, bunica Vera locuiește singură. De 8 luni, voluntarii noștri îi
+                aduc mâncare caldă în fiecare zi. Povestea ei ne motivează să continuăm...</p>
+              <a href="#" class="btn-primary-custom mt-2" style="padding:8px 20px;font-size:0.9rem;">Citește mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-post-item" data-category="evenimente">
+          <div class="blog-card h-100">
+            <img src="./img/blog/copii fericiti.jpg" alt="Spectacol teatru" class="blog-card-img">
+            <div class="p-4">
+              <span class="card-badge badge-cultura mb-2">Evenimente</span>
+              <h5 class="fw-bold mt-2">Spectacol de teatru: 300 de zâmbete în același timp</h5>
+              <p class="blog-meta mb-2">
+                <i class="fas fa-calendar me-1"></i>28 Aprilie 2026 &nbsp;
+                <i class="fas fa-user me-1"></i>Echipa Cultură
+              </p>
+              <p class="text-muted small">Proiectul „Teatru pentru Toți" a organizat un spectacol special pentru 300 de
+                copii din 5 case de copii. O seară de magic și bucurie pură...</p>
+              <a href="#" class="btn-primary-custom mt-2" style="padding:8px 20px;font-size:0.9rem;">Citește mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-post-item" data-category="impact">
+          <div class="blog-card h-100">
+            <img src="./img/blog/gunoi reciclare.jpg" alt="Colectare selectivă" class="blog-card-img">
+            <div class="p-4">
+              <span class="card-badge badge-mediu mb-2">Impact</span>
+              <h5 class="fw-bold mt-2">Colectare selectivă: 5 tone de deșeuri reciclate</h5>
+              <p class="blog-meta mb-2">
+                <i class="fas fa-calendar me-1"></i>5 Iunie 2026 &nbsp;
+                <i class="fas fa-user me-1"></i>Echipa Mediu
+              </p>
+              <p class="text-muted small">Campania de colectare selectivă din 20 de școli a adunat 5 tone de deșeuri
+                reciclabile în primele 3 luni. Iată cum am reușit...</p>
+              <a href="#" class="btn-primary-custom mt-2" style="padding:8px 20px;font-size:0.9rem;">Citește mai
+                mult</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-3">🤝 Voluntar<span>.md</span></div>
+          <p class="text-muted">Platforma națională de voluntariat din Moldova.</p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Pagini</h5>
+          <a href="index.html">Acasă</a>
+          <a href="projects.html">Proiecte</a>
+          <a href="help.html">Cum ajuți</a>
+          <a href="gallery.html">Galerie</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Blog</h5>
+          <a href="blog.html">Povești</a>
+          <a href="blog.html">Evenimente</a>
+          <a href="blog.html">Impact</a>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact</h5>
+          <p class="text-muted"><i class="fas fa-map-marker-alt text-warning me-2"></i>Str. Voluntarilor 1, Chișinău</p>
+          <p class="text-muted"><i class="fas fa-phone text-warning me-2"></i>+373 22 000 000</p>
+          <p class="text-muted"><i class="fas fa-envelope text-warning me-2"></i>info@voluntar.md</p>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="text-muted text-center mb-0">© 2026 Voluntar.md — Toate drepturile rezervate</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Înapoi sus"><i class="fas fa-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    // Filtrare Blog simpla
+    function filterBlog(btn, category) {
+      document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      document.querySelectorAll('.blog-post-item').forEach(function (item) {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
